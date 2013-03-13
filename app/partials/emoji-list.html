@@ -1,0 +1,21 @@
+<div class="container-fluid">
+  <div class="row-fluid" style="margin:0px 30px 20px 30px;">
+    <div>
+      <h3>🐸 Emoji Copy</h3>
+    </div>
+    <form class="navbar-search pull-left">
+      <input type="text" style="font-size:25px;width:230px;height:40px;" class="search-query" placeholder="Search" ng-model="query">
+    </form>
+  </div>
+
+</div>
+
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="clearfix"></div>
+    <div class="span1" style="background-color:#fff; margin:25px;" ng-repeat="emoji in emojis | filter:query">
+      <!--Body content-->
+      <div ng-bind-html-unsafe="emoji.code" style="font-size:50px; margin:0pt auto;" onTouchEnd="this.select();"></div>
+    </div>
+  </div>
+</div>
