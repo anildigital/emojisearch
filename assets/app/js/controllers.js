@@ -3385,5 +3385,4 @@ function EmojiListCtrl($scope) {
             "name": "THOUGHT BALLOON"
         }
     ]
-    //$scope.orderProp = 'age';
 }
